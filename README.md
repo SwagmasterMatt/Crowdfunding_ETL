@@ -1,8 +1,12 @@
 # Crowdfunding_ETL Introduction
-  In this project we will be building an ETL pipeline using Python, Pandas, and Python dictionary mthods to extract and transform data. After the data is transformed, we created four CSV files to assist in creating an ERD and table schema.
+In this project we will be building an ETL pipeline using Python, Pandas, and Python dictionary mthods to extract and transform data. After the data is transformed, we created four CSV files to assist in creating an ERD and table schema.
 
 # Creating the DataFrames
-
+- When creating the Category and Subcategory DataFrames the following columns were included:
+  - category_id
+  - category
+  - subcategory_id
+  - subcategory   
 # Creating the Crowdfunding Database
 - When creating the contacts DataFrame we decided to use the Python dictionary methods rather than using regular expressions.
 - Choosing the Pandas option meant that we had to iterate through the contacts DataFrame, converting each row to a dictionary. We then iterated through each dictionary using Python list comprehensions and adding values for each row to a new list.
