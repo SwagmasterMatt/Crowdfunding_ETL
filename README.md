@@ -36,6 +36,7 @@ In this project we will be building an ETL pipeline using Python, Pandas, and Py
 ![image](https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/a976763c-4881-425f-8f2e-e8157f200963)
 - We then used our ERD sketch (pictured above) to create table schema for each CSV file.
 <img width="270" alt="image" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/c00b32ea-d7ed-45c6-832e-26e5912ca35a">
+
 - After our schemas for the tables were created we needed to imput the data and make sure each table was created correctly.
 - Since our tables were created with quotations, when running a select statement each table needs to be addressed in quotations.
 
