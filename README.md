@@ -35,7 +35,60 @@ In this project we will be building an ETL pipeline using Python, Pandas, and Py
 - This sketch was created using QuickDBD. You can access QuickDBD by following this link: http://www.quickdatabasediagrams.com/
 ![image](https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/a976763c-4881-425f-8f2e-e8157f200963)
 - We then used our ERD sketch (pictured above) to create table schema for each CSV file.
-<img width="270" alt="image" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/8c3a4ec0-360a-496a-9520-a4fef34c3429">
+CREATE TABLE "Contacts" (
+    "contact_id" INT   NOT NULL,
+    "first_name" VARCHAR   NOT NULL,
+    "last_name" VARCHAR   NOT NULL,
+    "email" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_Contacts" PRIMARY KEY (
+        "contact_id"
+     )
+);
+
+CREATE TABLE "Category" (
+    "category_id" VARCHAR   NOT NULL,
+    "category" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_Category" PRIMARY KEY (
+        "category_id"
+     )
+);
+
+CREATE TABLE "Subcategory" (
+    "subcategory_id" VARCHAR   NOT NULL,
+    "subcategory" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_Subcategory" PRIMARY KEY (
+        "subcategory_id"
+     )
+);
+
+CREATE TABLE "Campaign" (
+    "cf_id" INT   NOT NULL,
+    "contact_id" INT   NOT NULL,
+    "company_name" VARCHAR   NOT NULL,
+    "description" VARCHAR   NOT NULL,
+    "goal" FLOAT   NOT NULL,
+    "pledged" FLOAT   NOT NULL,
+    "outcome" VARCHAR   NOT NULL,
+    "backers_count" INT   NOT NULL,
+    "country" VARCHAR   NOT NULL,
+    "currency" VARCHAR   NOT NULL,
+    "launched_date" DATE   NOT NULL,
+    "end_date" DATE   NOT NULL,
+    "category_id" VARCHAR   NOT NULL,
+    "subcategory_id" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_Campaign" PRIMARY KEY (
+        "cf_id"
+     )
+);
+
+ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_contact_id" FOREIGN KEY("contact_id")
+REFERENCES "Contacts" ("contact_id");
+
+ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_category_id" FOREIGN KEY("category_id")
+REFERENCES "Category" ("category_id");
+
+ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_subcategory_id" FOREIGN KEY("subcategory_id")
+REFERENCES "Subcategory" ("subcategory_id");
 
 
 # Project Members
