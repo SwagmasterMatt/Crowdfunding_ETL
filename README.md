@@ -52,8 +52,11 @@ Using QuickDB we generated a schema which would be used to import the final data
 - Since our tables were created with quotations, when running a select statement each table needs to be addressed in quotations.
 
 <img width="213" alt="Screenshot 2023-09-11 184915" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/a3e7a11f-3bc7-484a-98b0-37d552ae38a6">
+
 <img width="676" alt="Screenshot 2023-09-11 184940" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/0d6bb747-f21a-43a0-b92b-8a06de245bfa">
+
 <img width="184" alt="Screenshot 2023-09-11 185014" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/d0c09f93-efd6-4d40-85b4-78479f24c95a">
+
 <img width="366" alt="Screenshot 2023-09-11 185041" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/def8b2eb-68d0-4a90-96e9-5f2861ea8182">
 
 
