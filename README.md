@@ -7,8 +7,7 @@
 - When creating the contacts DataFrame we decided to use the Python dictionary methods rather than using regular expressions.
 - Choosing the Pandas option meant that we had to iterate through the contacts DataFrame, converting each row to a dictionary. We then iterated through each dictionary using Python list comprehensions and adding values for each row to a new list.
 - Once that was done we created a new DataFrame that contained the extrated data and slpit each "name" column value into a first and last name column. The first 10 rows of our new DataFrame are shown in the image below
-<img width="168" alt="image" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/516cddad-da51-4fa7-a053-770dd09f0f1f">
-
+<img width="164" alt="image" src="https://github.com/SwagmasterMatt/Crowdfunding_ETL/assets/135439652/9044bffe-5d41-4297-9d93-fd26b38e5255">
  
 # Methodology
 
